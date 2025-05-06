@@ -1,57 +1,115 @@
+/* General Body Styles */
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #f0f8f8;  /* Light teal background */
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #212529;
   }
   
-  header {
-    background-color: #343a40;
+  /* Navbar Style */
+  .navbar {
+    background-color: #006a57; /* Teal green background */
+  }
+  
+  .navbar .navbar-brand {
+    color: white !important;
+  }
+  
+  .navbar .nav-link {
+    color: white !important;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #e0e0e0 !important;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 4rem 0;
+    background-color: #e0f7f3;  /* Light teal background for sections */
+    margin-bottom: 1.5rem;
+  }
+  
+  .section.bg-light {
+    background-color: #e8f8f5;  /* Slightly lighter teal */
+  }
+  
+  /* Home Section */
+  #home {
+    text-align: center;
+  }
+  
+  #home h2 {
+    color: #004c40; /* Dark teal for heading */
+  }
+  
+  #home .lead {
+    color: #00796b; /* Medium teal for the subheading */
+  }
+  
+  #home ul {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #e8f8f5;  /* Light teal for project section */
+  }
+  
+  .project-card {
+    border: 1px solid #00796b; /* Teal border */
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Hover effect for cards */
+  }
+  
+  .project-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #004c40; /* Dark teal for contact section */
     color: white;
-    padding: 2rem;
     text-align: center;
   }
   
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  nav {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  nav a {
-    color: #007bff;
-    margin: 0 1rem;
+  #contact a {
+    color: #80cbc4; /* Light teal for links */
     text-decoration: none;
   }
   
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+  #contact a:hover {
+    text-decoration: underline;
   }
   
-  h2 {
-    color: #343a40;
-  }
-  
-  .project {
-    background-color: white;
-    border: 1px solid #dee2e6;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-  }
-  
+  /* Footer Style */
   footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #343a40;
+    background-color: #006a57; /* Same teal green as navbar */
     color: white;
-    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h2, h5 {
+    color: #004c40;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .project-card {
+      margin-bottom: 1rem;
+    }
   }
   
