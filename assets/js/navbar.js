@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </ul>
         <ul class="icons">
             <li><a href="https://github.com/SthuthyEva" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="https://www.linkedin.com/in/sthuthy-evangeline-m-8b501b76/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://www.linkedin.com/in/sthuthy-evangeline-8b501b76/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
             <li><a class="icon fa-file-pdf" href="./assets/resume.pdf" download> Resume </a></li>
         </ul>
     </nav>
