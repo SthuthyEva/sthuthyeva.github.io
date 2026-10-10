@@ -3,18 +3,18 @@
 <head>
   <title>Projects</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pap3dF2a6+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/teal-theme.css">
 </head>
 
-<body class="is-preload">
+<body class="teal-template">
   <div id="wrapper">
-    <h2 id="header">Projects</h2>
+    <header id="header"><p class="intro-label">Research · Competitions · Applied AI</p><h2>Projects</h2><p class="intro-subtitle">Ideas, experiments, and machine learning in practice.</p></header>
 
     <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
+    <a class="skip-link" href="#main">Skip to content</a><nav id="nav" aria-label="Main navigation"><ul class="links"><li><a href="index.html">Home</a></li><li class="active"><a href="projects.html" aria-current="page">Projects</a></li></ul><ul class="icons"><li><a href="https://github.com/SthuthyEva">GitHub ↗</a></li><li><a href="https://www.linkedin.com/in/sthuthy-evangeline-m-8b501b76/">LinkedIn ↗</a></li><li><a class="resume" href="assets/resume.pdf" download>Résumé ↓</a></li></ul></nav>
 
     <!-- Main -->
     <div id="main">
@@ -39,8 +39,7 @@
         </header>
         <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
         <p style="font-size: small;"> Built an NLP model to automatically evaluate student-written summaries (grades 3–12) using transformer-based architectures. Achieved strong performance through a robust cross validation strategy and auxiliary training focused on grammar and writing patterns across different grade levels.</p>
-        <a href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/commonlit-evaluate-student-summaries">
-          <img src="./images/kaggle.png" alt="Kaggle" style="width:24px; height:20px;"></a>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/commonlit-evaluate-student-summaries">View on Kaggle <span aria-hidden="true">↗</span></a>
       </article>
 
       <article>
@@ -52,8 +51,7 @@
         </header>
         <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
         <p style="font-size: small;">Developed models to evaluate the language proficiency of English Language Learner (ELL) students from grades 8–12 using their written essays. Followed a robust cross validation approach and customized transformer heads to better capture grammar, coherence, and writing quality. The solution helps provide more accurate feedback for students and streamlines grading for teachers.</p>
-         <a href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/petfinder-pawpularity-score">
-            <img src="./images/kaggle.png" alt="Kaggle" style="width:24px; height:20px;"></a>
+         <a class="award-link" href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning">View on Kaggle <span aria-hidden="true">↗</span></a>
       </article>
 
       <article>
@@ -65,8 +63,7 @@
         </header>
         <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
         <p style="font-size: small;"> Developed a semantic similarity model to identify key phrases and contextual relationships within patent documents. Leveraged transformer based architectures and domain context features to accurately match semantically similar phrases across diverse technical domains. The solution followed a CV inspired strategy with customized transformer heads and effective preprocessing which significantly improved contextual understanding and overall performance. This approach supports efficient patent examination by improving retrieval and reducing redundancy in prior art searches.</p>
-        <a href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/us-patent-phrase-to-phrase-matching">
-          <img src="./images/kaggle.png" alt="Kaggle" style="width:24px; height:20px;"></a>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/us-patent-phrase-to-phrase-matching">View on Kaggle <span aria-hidden="true">↗</span></a>
       </article>
 
        <article>
@@ -89,8 +86,7 @@
         </header>
         <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
         <p style="font-size: small;">Developed a computer vision model to predict the popularity (“Pawpularity”) of pet photos using image and metadata features. Careful image data preprocessing played a key role in improving model performance, supported by a robust validation strategy. The solution helps shelters and rescuers enhance photo appeal, increasing adoption chances for stray animals.</p>
-        <a href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/petfinder-pawpularity-score">
-          <img src="./images/kaggle.png" alt="Kaggle" style="width:24px; height:20px;"></a>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/petfinder-pawpularity-score">View on Kaggle <span aria-hidden="true">↗</span></a>
       </article>
 
       <article>
@@ -99,7 +95,7 @@
           <span class="category">Graduate Project</span>
           <span class="date">May 2016</span>
         </header>
-        <img class="image fit" src="./images/robo.jpg" alt="" style="display: block; margin: 0 auto; width: 70%; height: auto; border-radius: 10px;"/>
+        <img class="image fit" src="./images/robo.jpg" alt="Life detection rescue robot prototype" style="display: block; margin: 0 auto; width: 70%; height: auto; border-radius: 10px;"/>
         <p style="font-size: small;">Developed a cost effective rescue robot using Pyroelectric Infrared (PIR) and ultrasonic sensors to detect human presence and distance in disaster zones. The system wirelessly communicates detections via Zigbee, aiding faster and safer rescue operations.</p>
       </article>
 
@@ -112,16 +108,12 @@
   </div>
 
   <!-- Footer Placeholder -->
-  <div id="footer-placeholder"></div>
+  <div id="footer-placeholder"><footer><p>&copy; 2026 Sthuthy Evangeline</p></footer></div>
 
   <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/navbar.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/navbar.js"></script>
 </body>
 </html>
