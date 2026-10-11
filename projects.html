@@ -1,141 +1,115 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Sthuthy Evangeline</title>
-<meta name="description" content="Sthuthy Evangeline — Data scientist and MLOps engineer building explainable machine learning systems for meaningful real-world impact.">
-<meta name="theme-color" content="#f5f3ed">
-<link rel="stylesheet" href="assets/css/portfolio.css">
+  <title>Projects</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <link rel="stylesheet" href="assets/css/blue-theme.css">
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<nav class="nav" aria-label="Main navigation">
-<a class="brand" href="index.html">SE<span>✳</span>
-<span class="brand-name">Sthuthy Evangeline</span>
-</a>
-<div class="nav-links">
-<a href="index.html">About</a>
-<a href="projects.html" aria-current="page">Work</a>
-<a class="nav-resume" href="assets/resume.pdf">Résumé ↗</a>
-</div>
-</nav>
-<main id="main">
-<section class="projects-hero">
-<p class="eyebrow">RESEARCH · EXPERIMENTATION · APPLICATION</p>
-<h1>Selected <em>work.</em>
-</h1>
-<p>Exploring the possibilities of machine learning — from clinical decision support to language understanding and computer vision.</p>
-</section>
-<section class="project-grid" aria-label="Projects">
-<article class="project featured">
-<div class="project-top">
-<span>Personal Research</span>
-<span>Oct 2025</span>
-</div>
-<div class="project-art graph" aria-hidden="true">
-<span>Clinical notes</span>
-<i>↘</i>
-<b>Knowledge graph</b>
-<i>↗</i>
-<span>Safety insights</span>
-</div>
-<div class="project-number">01</div>
-<h2>Med Guard: A Knowledge-Driven System for Drug Safety Risk Prediction</h2>
-<p>Med Guard is an explainable AI-driven clinical decision support system that integrates Transformer-based Named Entity Recognition (ClinicalBERT, BioBERT, and spaCy), Neo4j Knowledge Graphs, and Graph RAG to extract medications, diseases, symptoms, dosages, and laboratory findings from unstructured clinical notes. It constructs a domain-specific knowledge graph linking clinical entities, biomedical ontologies, and patient context, while leveraging vector embeddings, semantic retrieval, and graph traversal to retrieve relevant evidence from clinical guidelines and medical literature. The system performs drug–drug, drug–disease, and contraindication risk analysis, grounding LLM responses with retrieved evidence to reduce hallucinations and generate transparent, evidence-backed safety recommendations with explainable reasoning for clinicians.</p>
-<a class="text-link" href="https://github.com/SthuthyEva/MedGuard-A-Knowledge-Driven-System-for-Drug-Safety-Risk-Prediction-">Explore repository <span>↗</span>
-</a>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Kaggle Competition</span>
-<span>Oct 2023</span>
-</div>
-<div class="project-number">02</div>
-<h2>CommonLit - Evaluate Student Summaries</h2>
-<span class="medal">Kaggle Bronze Medal Winner</span>
-<p>Built an NLP model to automatically evaluate student-written summaries (grades 3–12) using transformer-based architectures. Achieved strong performance through a robust cross validation strategy and auxiliary training focused on grammar and writing patterns across different grade levels.</p>
-<a class="text-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/commonlit-evaluate-student-summaries">View competition <span>↗</span>
-</a>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Kaggle Competition</span>
-<span>Nov 2022</span>
-</div>
-<div class="project-number">03</div>
-<h2>Feedback Prize - English Language Learning</h2>
-<span class="medal">Kaggle Silver Medal Winner</span>
-<p>Developed models to evaluate the language proficiency of English Language Learner (ELL) students from grades 8–12 using their written essays. Followed a robust cross validation approach and customized transformer heads to better capture grammar, coherence, and writing quality. The solution helps provide more accurate feedback for students and streamlines grading for teachers.</p>
-<a class="text-link" href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning">View competition <span>↗</span>
-</a>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Kaggle Competition</span>
-<span>Jun 2022</span>
-</div>
-<div class="project-number">04</div>
-<h2>U.S. Patent Phrase to Phrase Matching</h2>
-<span class="medal">Kaggle Silver Medal Winner</span>
-<p>Developed a semantic similarity model to identify key phrases and contextual relationships within patent documents. Leveraged transformer based architectures and domain context features to accurately match semantically similar phrases across diverse technical domains. The solution followed a CV inspired strategy with customized transformer heads and effective preprocessing which significantly improved contextual understanding and overall performance. This approach supports efficient patent examination by improving retrieval and reducing redundancy in prior art searches.</p>
-<a class="text-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/us-patent-phrase-to-phrase-matching">View competition <span>↗</span>
-</a>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Kaggle Competition</span>
-<span>May 2022</span>
-</div>
-<div class="project-number">05</div>
-<h2>NBME - Score Clinical Patient Notes</h2>
-<span class="medal">Kaggle Bronze Medal Winner</span>
-<p>Developed an NLP solution to automatically identify key clinical concepts in medical student patient notes, mapping rubric features (e.g., “diminished appetite”) to diverse textual expressions (e.g., “eating less”). I used transformer-based models with customized heads and a cross-validation strategy to ensure accurate and reliable detection of clinical features. This solution improves scoring efficiency, enhances interpretability, and helps medical educators provide timely, actionable feedback.</p>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Kaggle Competition</span>
-<span>Jan 2022</span>
-</div>
-<div class="project-number">06</div>
-<h2>PetFinder.my - Pawpularity Contest</h2>
-<span class="medal">Kaggle Bronze Medalist 212th</span>
-<p>Developed a computer vision model to predict the popularity (“Pawpularity”) of pet photos using image and metadata features. Careful image data preprocessing played a key role in improving model performance, supported by a robust validation strategy. The solution helps shelters and rescuers enhance photo appeal, increasing adoption chances for stray animals.</p>
-<a class="text-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/petfinder-pawpularity-score">View competition <span>↗</span>
-</a>
-</article>
-<article class="project">
-<div class="project-top">
-<span>Graduate Project</span>
-<span>May 2016</span>
-</div>
-<img class="robot" src="images/robo.jpg" alt="Life detection rescue robot prototype" loading="lazy">
-<div class="project-number">07</div>
-<h2>Intelligent Life Detection Robot</h2>
-<p>Developed a cost effective rescue robot using Pyroelectric Infrared (PIR) and ultrasonic sensors to detect human presence and distance in disaster zones. The system wirelessly communicates detections via Zigbee, aiding faster and safer rescue operations.</p>
-</article>
-</section>
-<section class="contact">
-<p class="section-label">LET'S CONNECT</p>
-<h2>Good ideas deserve<br>
-<em>thoughtful collaboration.</em>
-</h2>
-<a class="button primary" href="https://www.linkedin.com/in/sthuthy-evangeline-m-8b501b76/">Connect on LinkedIn <span>↗</span>
-</a>
-</section>
-</main>
-<footer>
-<div>
-<a class="brand" href="index.html">SE<span>✳</span>
-</a>
-<p>Thoughtful models. Meaningful impact.</p>
-</div>
-<div class="footer-links">
-<a href="https://github.com/SthuthyEva">GitHub ↗</a>
-<a href="https://www.kaggle.com/sthuthyevangelinem/competitions">Kaggle ↗</a>
-<a href="https://www.linkedin.com/in/sthuthy-evangeline-m-8b501b76/">LinkedIn ↗</a>
-</div>
-<small>© 2026 Sthuthy Evangeline</small>
-</footer>
+
+<body class="blue-template">
+  <div id="wrapper">
+    <header id="header"><p class="intro-label">Research · Competitions · Applied AI</p><h2>Projects</h2><p class="intro-subtitle">Ideas, experiments, and machine learning in practice.</p></header>
+
+    <!-- Navbar Placeholder -->
+    <a class="skip-link" href="#main">Skip to content</a><nav id="nav" aria-label="Main navigation"><ul class="links"><li><a href="index.html">Home</a></li><li class="active"><a href="projects.html" aria-current="page">Projects</a></li></ul><ul class="icons"><li><a href="https://github.com/SthuthyEva">GitHub ↗</a></li><li><a href="https://www.linkedin.com/in/sthuthy-evangeline-m-8b501b76/">LinkedIn ↗</a></li><li><a class="resume" href="assets/resume.pdf" download>Résumé ↓</a></li></ul></nav>
+
+    <!-- Main -->
+    <div id="main">
+      <section class="posts">
+      <article>
+        <header>
+          <h2>Med Guard: A Knowledge-Driven System for Drug Safety Risk Prediction</h2>
+          <span class="category">Personal Research</span>
+          <span class="date">Oct 2025</span>
+        </header>
+        <!-- <img class="image fit" src="./images/med.jpg" alt="" style="display: block; margin: 0 auto; width: 70%; height: auto; border-radius: 10px;"/> -->
+        <p style="font-size: small;">Med Guard is an explainable AI-driven clinical decision support system that integrates Transformer-based Named Entity Recognition (ClinicalBERT, BioBERT, and spaCy), Neo4j Knowledge Graphs, and Graph RAG to extract medications, diseases, symptoms, dosages, and laboratory findings from unstructured clinical notes. It constructs a domain-specific knowledge graph linking clinical entities, biomedical ontologies, and patient context, while leveraging vector embeddings, semantic retrieval, and graph traversal to retrieve relevant evidence from clinical guidelines and medical literature. The system performs drug–drug, drug–disease, and contraindication risk analysis, grounding LLM responses with retrieved evidence to reduce hallucinations and generate transparent, evidence-backed safety recommendations with explainable reasoning for clinicians.</p>
+      </article>
+
+      <article>
+        <header>
+          <h2>CommonLit - Evaluate Student Summaries</h2>
+          <h3>(Kaggle Bronze Medal Winner)</h3>
+
+          <span class="category">Kaggle Competition</span>
+          <span class="date">Oct 2023</span>
+        </header>
+        <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
+        <p style="font-size: small;"> Built an NLP model to automatically evaluate student-written summaries (grades 3–12) using transformer-based architectures. Achieved strong performance through a robust cross validation strategy and auxiliary training focused on grammar and writing patterns across different grade levels.</p>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/commonlit-evaluate-student-summaries">View on Kaggle <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article>
+        <header>
+          <h2>Feedback Prize - English Language Learning</h2>
+          <h3>(Kaggle Silver Medal Winner)</h3>
+          <span class="category">Kaggle Competition</span>
+          <span class="date">Nov 2022</span>
+        </header>
+        <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
+        <p style="font-size: small;">Developed models to evaluate the language proficiency of English Language Learner (ELL) students from grades 8–12 using their written essays. Followed a robust cross validation approach and customized transformer heads to better capture grammar, coherence, and writing quality. The solution helps provide more accurate feedback for students and streamlines grading for teachers.</p>
+         <a class="award-link" href="https://www.kaggle.com/competitions/feedback-prize-english-language-learning">View on Kaggle <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article>
+        <header>
+          <h2>U.S. Patent Phrase to Phrase Matching</h2>
+          <h3>(Kaggle Silver Medal Winner)</h3>
+          <span class="category">Kaggle Competition</span>
+          <span class="date">Jun 2022</span>
+        </header>
+        <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
+        <p style="font-size: small;"> Developed a semantic similarity model to identify key phrases and contextual relationships within patent documents. Leveraged transformer based architectures and domain context features to accurately match semantically similar phrases across diverse technical domains. The solution followed a CV inspired strategy with customized transformer heads and effective preprocessing which significantly improved contextual understanding and overall performance. This approach supports efficient patent examination by improving retrieval and reducing redundancy in prior art searches.</p>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/us-patent-phrase-to-phrase-matching">View on Kaggle <span aria-hidden="true">↗</span></a>
+      </article>
+
+       <article>
+        <header>
+          <h2>NBME - Score Clinical Patient Notes</h2>
+          <h3>(Kaggle Bronze Medal Winner)</h3>
+          <span class="category">Kaggle Competition</span>
+          <span class="date">May 2022</span>
+        </header>
+        <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
+        <p style="font-size: small;">Developed an NLP solution to automatically identify key clinical concepts in medical student patient notes, mapping rubric features (e.g., “diminished appetite”) to diverse textual expressions (e.g., “eating less”). I used transformer-based models with customized heads and a cross-validation strategy to ensure accurate and reliable detection of clinical features. This solution improves scoring efficiency, enhances interpretability, and helps medical educators provide timely, actionable feedback.</p>
+      </article>
+
+      <article>
+        <header>
+          <h2>PetFinder.my - Pawpularity Contest</h2>
+          <h3>(Kaggle Bronze Medalist 212th)</h3>
+          <span class="category">Kaggle Competition</span>
+          <span class="date">Jan 2022</span>
+        </header>
+        <!-- <img class="image fit" src="./images/DBig.jpg" alt="" /> -->
+        <p style="font-size: small;">Developed a computer vision model to predict the popularity (“Pawpularity”) of pet photos using image and metadata features. Careful image data preprocessing played a key role in improving model performance, supported by a robust validation strategy. The solution helps shelters and rescuers enhance photo appeal, increasing adoption chances for stray animals.</p>
+        <a class="award-link" href="https://www.kaggle.com/certification/competitions/sthuthyevangelinem/petfinder-pawpularity-score">View on Kaggle <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article>
+        <header>
+          <h2>Intelligent Life Detection Robot</h2>
+          <span class="category">Graduate Project</span>
+          <span class="date">May 2016</span>
+        </header>
+        <img class="image fit" src="./images/robo.jpg" alt="Life detection rescue robot prototype" style="display: block; margin: 0 auto; width: 70%; height: auto; border-radius: 10px;"/>
+        <p style="font-size: small;">Developed a cost effective rescue robot using Pyroelectric Infrared (PIR) and ultrasonic sensors to detect human presence and distance in disaster zones. The system wirelessly communicates detections via Zigbee, aiding faster and safer rescue operations.</p>
+      </article>
+
+
+			</section>
+
+
+
+    </div>
+  </div>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"><footer><p>&copy; 2026 Sthuthy Evangeline</p></footer></div>
+
+  <!-- Scripts -->
 </body>
 </html>
