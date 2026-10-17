@@ -41,10 +41,8 @@ a:focus-visible { outline:3px solid #049ccc; outline-offset:4px; }
 #nav ul.icons a.resume:hover { background:var(--deep-blue); color:#fff!important; }
 #main>.posts { display:grid; grid-template-columns:1fr 1fr; padding:34px; gap:22px; border:0; }
 #main>.posts>article { width:auto; padding:32px; margin:0; border:1px solid var(--line)!important; background:#fbfdff; border-radius:9px; text-align:left; }
-#main>.posts>article:first-child { grid-column:1/-1; background:#e9f6fc; border-top:4px solid var(--blue)!important; }
 #main>.posts>article header { margin-bottom:20px; }
 #main>.posts>article h2 { font-size:24px; line-height:1.35; margin:0 0 14px; letter-spacing:0; }
-#main>.posts>article:first-child h2 { font-size:28px; max-width:760px; }
 #main>.posts>article h3 { color:#006c97; background:#e0f0f8; display:inline-block; font-family:Inter,Arial,sans-serif; font-size:11px; font-weight:600; padding:7px 11px; border-radius:5px; margin:0 0 16px; line-height:1.5; }
 .category,.date { font-family:Inter,Arial,sans-serif; font-size:10px; color:var(--muted); letter-spacing:.4px; }
 .category { display:inline-block; margin-right:15px; color:var(--blue); font-weight:600; }
@@ -86,8 +84,7 @@ a:focus-visible { outline:3px solid #049ccc; outline-offset:4px; }
  .org-list li { padding-right:10px; font-size:13px; }
  p { font-size:13px; }
  #main>.posts { grid-template-columns:1fr; padding:18px; }
- #main>.posts>article:first-child { grid-column:auto; }
- #main>.posts>article h2,#main>.posts>article:first-child h2 { font-size:23px; }
+ #main>.posts>article h2 { font-size:23px; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } a { transition:none; } }
 
